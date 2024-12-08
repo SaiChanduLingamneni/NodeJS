@@ -24,4 +24,31 @@ router.get('/category/:category', async (req, res) => {
   }
 });
 
+
+// Filtered Cars API
+router.get('/filter', async (req, res) => {
+  const { category, minPrice, maxPrice } = req.query;
+
+  const query = {};
+
+  if (category) {
+    query.category = category;
+  }
+
+  if (minPrice) {
+    query.price = { ...query.price, $gte: Number(minPrice) };
+  }
+
+  if (maxPrice) {
+    query.price = { ...query.price, $lte: Number(maxPrice) };
+  }
+
+  try {
+    const filteredCars = await Car.find(query);
+    res.json(filteredCars);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
 module.exports = router;
