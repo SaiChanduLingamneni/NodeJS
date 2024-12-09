@@ -1,5 +1,6 @@
 const express = require('express');
 const Car = require('../models/carModel');
+const { getCarByModel, getCars, getCarById } = require('../controllers/carController'); // Import the function
 
 const router = express.Router();
 
@@ -23,6 +24,10 @@ router.get('/category/:category', async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
+
+// Route to get car by model
+router.get('/cars/model/:model', getCarByModel);
+
 
 
 // Filtered Cars API
