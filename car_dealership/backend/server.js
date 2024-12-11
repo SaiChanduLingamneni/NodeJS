@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const path = require('path'); 
 const dotenv = require('dotenv');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -24,6 +25,13 @@ app.use(bodyParser.json());  // For parsing application/json
 
 // Routes
 app.use('/api/cars', carRoutes);
+
+app.get('/wsdl/carService.wsdl', (req, res) => {
+  const wsdlPath = path.join(__dirname, 'carService.wsdl');
+  console.log(wsdlPath); // Logs the resolved path
+  res.sendFile(wsdlPath);
+});
+
 
 // Set up the server to listen on the port defined in the .env file
 const PORT = process.env.PORT || 3000;

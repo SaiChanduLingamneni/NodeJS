@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns:xs="http://www.w3.org/2001/XMLSchema"
+             xmlns:tns="http://example.com/cars"
+             targetNamespace="http://example.com/cars">
+
+    <!-- Types Section -->
+    <types>
+        <xs:schema targetNamespace="http://example.com/cars" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+            <xs:element name="FilterCarsRequest">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Category" type="xs:string" minOccurs="0"/>
+                        <xs:element name="MinPrice" type="xs:decimal" minOccurs="0"/>
+                        <xs:element name="MaxPrice" type="xs:decimal" minOccurs="0"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="FilterCarsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Car" type="tns:Car" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:complexType name="Car">
+                <xs:sequence>
+                    <xs:element name="Name" type="xs:string"/>
+                    <xs:element name="Model" type="xs:string"/>
+                    <xs:element name="Price" type="xs:decimal"/>
+                    <xs:element name="Category" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+    </types>
+
+    <!-- Messages -->
+    <message name="FilterCarsInput">
+        <part name="parameters" element="tns:FilterCarsRequest"/>
+    </message>
+    <message name="FilterCarsOutput">
+        <part name="parameters" element="tns:FilterCarsResponse"/>
+    </message>
+
+    <!-- Port Type -->
+    <portType name="CarServicePortType">
+        <operation name="FilterCars">
+            <input message="tns:FilterCarsInput"/>
+            <output message="tns:FilterCarsOutput"/>
+        </operation>
+    </portType>
+
+    <!-- Binding -->
+    <binding name="CarServiceBinding" type="tns:CarServicePortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="FilterCars">
+            <soap:operation soapAction="http://example.com/cars/FilterCars"/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+    </binding>
+
+    <!-- Service -->
+    <service name="CarService">
+        <port name="CarServicePort" binding="tns:CarServiceBinding">
+            <soap:address location="http://localhost:3000/ws/cars"/>
+        </port>
+    </service>
+</definitions>
