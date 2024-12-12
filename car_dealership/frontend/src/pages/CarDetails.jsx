@@ -98,13 +98,13 @@ function CarDetails() {
                   <strong>Exterior Color:</strong> {details.exterior}
                 </div>
                 <div className="car-detail-item">
-                  <strong>Drivetrain:</strong> {details.drivetrain}
+                  <strong>Make:</strong> {details.make}
                 </div>
                 <div className="car-detail-item">
-                  <strong>Interior:</strong> {details.interior}
+                  <strong>Year:</strong> {details.year}
                 </div>
                 <div className="car-detail-item">
-                  <strong>Transmission:</strong> {details.transmission}
+                  <strong>VIN:</strong> {details.VIN}
                 </div>
                 <div className="car-detail-item">
                   <strong>Fuel Efficiency:</strong> {details.fuelEfficiency}

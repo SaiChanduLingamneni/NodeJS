@@ -17,9 +17,9 @@ const seedCars = async () => {
           category: 'Sedan',
           details: {
             exterior: 'Black',
-            drivetrain: 'All Wheel Drive 4MATIC',
-            interior: 'Black ARTICO',
-            transmission: '8-Speed Automatic',
+            make: 'Mercedes',
+            year: '2018',
+            VIN: 'WVGBV3AXXDW626077',
             fuelEfficiency: '9.5 CITY / 6.8 HWY L/100KM',
             keyFeatures: [
               'AWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Hands-Free Liftgate',
@@ -45,9 +45,9 @@ const seedCars = async () => {
           category: 'Sedan',
           details: {
             exterior: 'Black',
-            drivetrain: 'All Wheel Drive 4MATIC',
-            interior: 'Black ARTICO',
-            transmission: '8-Speed Automatic',
+            make: 'Mercedes',
+            year: '2018',
+            VIN: 'WVGBV3AXXDW626077',
             fuelEfficiency: '9.5 CITY / 6.8 HWY L/100KM',
             keyFeatures: [
               'AWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Hands-Free Liftgate',
@@ -73,9 +73,9 @@ const seedCars = async () => {
           category: 'Sedan',
           details: {
             exterior: 'Black',
-            drivetrain: 'All Wheel Drive 4MATIC',
-            interior: 'Black ARTICO',
-            transmission: '8-Speed Automatic',
+            make: 'Mercedes',
+            year: '2018',
+            VIN: 'WVGBV3AXXDW626077',
             fuelEfficiency: '9.5 CITY / 6.8 HWY L/100KM',
             keyFeatures: [
               'AWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Hands-Free Liftgate',
@@ -101,9 +101,9 @@ const seedCars = async () => {
           category: 'Sedan',
           details: {
             exterior: 'Polar White',
-            drivetrain: 'All Wheel Drive 4MATIC',
-            interior: 'Black ARTICO',
-            transmission: '8-Speed Automatic',
+            make: 'Mercedes',
+            year: '2018',
+            VIN: 'WVGBV3AXXDW626077',
             fuelEfficiency: '9.5 CITY / 6.8 HWY L/100KM',
             keyFeatures: [
               'AWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Hands-Free Liftgate',
@@ -129,9 +129,9 @@ const seedCars = async () => {
           category: 'Sedan',
           details: {
             exterior: 'Polar White',
-            drivetrain: 'All Wheel Drive 4MATIC',
-            interior: 'Black ARTICO',
-            transmission: '8-Speed Automatic',
+            make: 'Mercedes',
+            year: '2018',
+            VIN: 'WVGBV3AXXDW626077',
             fuelEfficiency: '9.5 CITY / 6.8 HWY L/100KM',
             keyFeatures: [
               'AWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Hands-Free Liftgate',
@@ -156,9 +156,9 @@ const seedCars = async () => {
           category: 'Sedan',
           details: {
             exterior: 'Polar White',
-            drivetrain: 'All Wheel Drive 4MATIC',
-            interior: 'Black ARTICO',
-            transmission: '8-Speed Automatic',
+            make: 'Mercedes',
+            year: '2018',
+            VIN: 'WVGBV3AXXDW626077',
             fuelEfficiency: '9.5 CITY / 6.8 HWY L/100KM',
             keyFeatures: [
               'AWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Hands-Free Liftgate',
@@ -186,9 +186,9 @@ const seedCars = async () => {
           category: 'SUV',
           details: {
             exterior: 'Obsidian Black',
-            drivetrain: 'All Wheel Drive 4MATIC',
-            interior: 'Black Nappa Leather',
-            transmission: '9-Speed Automatic',
+            make: 'Mercedes',
+            year: '2018',
+            VIN: 'WVGBV3AXXDW626077',
             fuelEfficiency: '13 CITY / 17 HWY MPG',
             keyFeatures: [
               'AWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Hands-Free Liftgate',
@@ -214,9 +214,9 @@ const seedCars = async () => {
           category: 'SUV',
           details: {
             exterior: 'Iridium Silver',
-            drivetrain: 'All Wheel Drive 4MATIC',
-            interior: 'Black Nappa Leather',
-            transmission: '9-Speed Automatic',
+            make: 'Mercedes',
+            year: '2018',
+            VIN: 'WVGBV3AXXDW626077',
             fuelEfficiency: '14 CITY / 19 HWY MPG',
             keyFeatures: [
               'AWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Hands-Free Liftgate',
@@ -242,9 +242,9 @@ const seedCars = async () => {
           category: 'SUV',
           details: {
             exterior: 'Obsidian Black',
-            drivetrain: 'All Wheel Drive 4MATIC',
-            interior: 'Black ARTICO',
-            transmission: '9-Speed Automatic',
+            make: 'Mercedes',
+            year: '2018',
+            VIN: 'WVGBV3AXXDW626077',
             fuelEfficiency: '19 CITY / 26 HWY MPG',
             keyFeatures: [
               'AWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Hands-Free Liftgate',
@@ -270,9 +270,9 @@ const seedCars = async () => {
           category: 'SUV',
           details: {
             exterior: 'Iridium Silver',
-            drivetrain: 'All Wheel Drive 4MATIC',
-            interior: 'Black ARTICO',
-            transmission: '9-Speed Automatic',
+            make: 'Mercedes',
+            year: '2018',
+            VIN: 'WVGBV3AXXDW626077',
             fuelEfficiency: '22 CITY / 28 HWY MPG',
             keyFeatures: [
               'AWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Hands-Free Liftgate',
@@ -298,9 +298,9 @@ const seedCars = async () => {
           category: 'SUV',
           details: {
             exterior: 'Iridium Silver',
-            drivetrain: 'All Wheel Drive 4MATIC',
-            interior: 'Black ARTICO',
-            transmission: '8-Speed Dual-Clutch',
+            make: 'Mercedes',
+            year: '2018',
+            VIN: 'WVGBV3AXXDW626077',
             fuelEfficiency: '21 CITY / 28 HWY MPG',
             keyFeatures: [
               'AWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Hands-Free Liftgate',
@@ -326,9 +326,9 @@ const seedCars = async () => {
           category: 'SUV',
           details: {
             exterior: 'Iridium Silver',
-            drivetrain: 'All Wheel Drive',
-            interior: 'Black Nappa Leather',
-            transmission: 'Single-Speed Transmission',
+            make: 'Mercedes',
+            year: '2018',
+            VIN: 'WVGBV3AXXDW626077',
             fuelEfficiency: 'N/A (Electric)',
             keyFeatures: [
               'AWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Hands-Free Liftgate',
@@ -356,9 +356,9 @@ const seedCars = async () => {
           category: 'Sports',
           details: {
             exterior: 'Selenite Grey',
-            drivetrain: 'All Wheel Drive 4MATIC',
-            interior: 'Black Nappa Leather',
-            transmission: '9-Speed Automatic',
+            make: 'Mercedes',
+            year: '2018',
+            VIN: 'WVGBV3AXXDW626077',
             fuelEfficiency: '15 CITY / 20 HWY MPG',
             keyFeatures: [
               'AWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Heated Seats',
@@ -383,9 +383,9 @@ const seedCars = async () => {
           category: 'Sports',
           details: {
             exterior: 'Iridium Silver',
-            drivetrain: 'Rear Wheel Drive',
-            interior: 'Black Nappa Leather',
-            transmission: '9-Speed Automatic',
+            make: 'Mercedes',
+            year: '2018',
+            VIN: 'WVGBV3AXXDW626077',
             fuelEfficiency: '16 CITY / 22 HWY MPG',
             keyFeatures: [
               'RWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Heated Seats',
@@ -410,9 +410,9 @@ const seedCars = async () => {
           category: 'Sports',
           details: {
             exterior: 'Iridium Silver',
-            drivetrain: 'Rear Wheel Drive',
-            interior: 'Black Nappa Leather',
-            transmission: '9-Speed Automatic',
+            make: 'Mercedes',
+            year: '2018',
+            VIN: 'WVGBV3AXXDW626077',
             fuelEfficiency: '17 CITY / 26 HWY MPG',
             keyFeatures: [
               'RWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Heated Seats',
@@ -437,9 +437,9 @@ const seedCars = async () => {
           category: 'Sports',
           details: {
             exterior: 'Cosmos Black',
-            drivetrain: 'All Wheel Drive 4MATIC',
-            interior: 'Black ARTICO Leather',
-            transmission: '8-Speed Dual-Clutch',
+            make: 'Mercedes',
+            year: '2018',
+            VIN: 'WVGBV3AXXDW626077',
             fuelEfficiency: '22 CITY / 29 HWY MPG',
             keyFeatures: [
               'AWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Heated Seats',
@@ -464,9 +464,9 @@ const seedCars = async () => {
           category: 'Sports',
           details: {
             exterior: 'Iridium Silver',
-            drivetrain: 'All Wheel Drive 4MATIC',
-            interior: 'Black Nappa Leather',
-            transmission: '9-Speed Automatic',
+            make: 'Mercedes',
+            year: '2018',
+            VIN: 'WVGBV3AXXDW626077',
             fuelEfficiency: '16 CITY / 24 HWY MPG',
             keyFeatures: [
               'AWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Heated Seats',
@@ -491,9 +491,9 @@ const seedCars = async () => {
           category: 'Sports',
           details: {
             exterior: 'Obsidian Black',
-            drivetrain: 'All Wheel Drive 4MATIC',
-            interior: 'Designo Porcelain Nappa Leather',
-            transmission: '9-Speed Automatic',
+            make: 'Mercedes',
+            year: '2018',
+            VIN: 'WVGBV3AXXDW626077',
             fuelEfficiency: '15 CITY / 21 HWY MPG',
             keyFeatures: [
               'AWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Heated Seats',

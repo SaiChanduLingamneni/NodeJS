@@ -11,9 +11,9 @@ const carSchema = new mongoose.Schema({
   category: { type: String, enum: ['Sedan', 'SUV', 'Sports'], required: true },
   details: {
     exterior: { type: String },
-    drivetrain: { type: String },
-    interior: { type: String },
-    transmission: { type: String },
+    make: { type: String },
+    year: { type: String },
+    VIN: { type: String },
     fuelEfficiency: { type: String },
     keyFeatures: [String],  // Array of key features
     scheduleTestDrive: { type: Boolean, default: false },

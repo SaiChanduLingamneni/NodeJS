@@ -1,8 +1,29 @@
-import React from 'react';
-import { Link } from 'react-router-dom';// Importing the same styles as the Home page
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Home.css'; // Contact page specific styles
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you can handle the form submission logic, like sending the data to a backend server
+    alert('Thank you for reaching out to us! We will get back to you shortly.');
+    setFormData({ name: '', email: '', message: '' });
+  };
+
   return (
     <div className="home-container">
       {/* Header */}
@@ -55,37 +76,76 @@ function Contact() {
               <li>Sunday: Closed</li>
             </ul>
           </div>
+
+          {/* Contact Form */}
+          <div className="contact-form">
+            <h3>Send Us a Message</h3>
+            <form onSubmit={handleSubmit}>
+              <div className="form-group">
+                <label htmlFor="name">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="message">Message:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" className="submit-button">Submit</button>
+            </form>
+          </div>
         </div>
       </main>
 
       {/* Footer */}
       <footer className="footer">
-  <div className="social-media">
-    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-      <img
-        src={require('../assets/facebook.png')}
-        alt="Facebook"
-        className="social-icon"
-      />
-    </a>
-    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-      <img
-        src={require('../assets/instagram.png')}
-        alt="Instagram"
-        className="social-icon"
-      />
-    </a>
-    <a href="https://mail.google.com" target="_blank" rel="noopener noreferrer">
-      <img
-        src={require('../assets/gmail.png')}
-        alt="G-mail"
-        className="social-icon"
-      />
-    </a>
-  </div>
-  <p>&copy; 2024 Merce-Lux. All Rights Reserved.</p>
-</footer>
-
+        <div className="social-media">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <img
+              src={require('../assets/facebook.png')}
+              alt="Facebook"
+              className="social-icon"
+            />
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <img
+              src={require('../assets/instagram.png')}
+              alt="Instagram"
+              className="social-icon"
+            />
+          </a>
+          <a href="https://mail.google.com" target="_blank" rel="noopener noreferrer">
+            <img
+              src={require('../assets/gmail.png')}
+              alt="G-mail"
+              className="social-icon"
+            />
+          </a>
+        </div>
+        <p>&copy; 2024 Merce-Lux. All Rights Reserved.</p>
+      </footer>
     </div>
   );
 }
