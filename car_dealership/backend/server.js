@@ -36,3 +36,10 @@ app.get('/wsdl/carService.wsdl', (req, res) => {
 // Set up the server to listen on the port defined in the .env file
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+/*
+1. Get All Cars: GET /api/cars/
+2. Get Cars by Category: GET /api/cars/category/:category
+3. Get Car by Model: GET /api/cars/cars/model/:model
+4. Filter Cars: GET /api/cars/filter
+*/

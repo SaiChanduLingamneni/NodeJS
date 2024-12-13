@@ -1,59 +1,23 @@
-const express = require('express');
-const Car = require('../models/carModel');
-const { getCarByModel, getCars, getCarById } = require('../controllers/carController'); // Import the function
+const express = require('express'); // Importing Express framework
+const Car = require('../models/carModel'); // Importing the Car model
+const { getCarByModel, getCars, getCarByCategory, getCarbyFilter } = require('../controllers/carController'); // Importing controller functions for handling requests
 
-const router = express.Router();
+const router = express.Router(); // Creating an Express router instance
 
-// GET all cars
-router.get('/', async (req, res) => {
-  try {
-    const cars = await Car.find({});
-    res.json(cars);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
+// Route to get all cars
+// Endpoint: GET /
+router.get('/', getCars);
 
-// GET cars by category
-router.get('/category/:category', async (req, res) => {
-  try {
-    const category = req.params.category;
-    const cars = await Car.find({ category });
-    res.json(cars);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
+// Route to get cars by category
+// Endpoint: GET /category/:category
+router.get('/category/:category', getCarByCategory);
 
-// Route to get car by model
+// Route to get a car by its model
+// Endpoint: GET /cars/model/:model
 router.get('/cars/model/:model', getCarByModel);
 
+// Route to filter cars based on query parameters (category, minPrice, maxPrice)
+// Endpoint: GET /filter
+router.get('/filter', getCarbyFilter);
 
-
-// Filtered Cars API
-router.get('/filter', async (req, res) => {
-  const { category, minPrice, maxPrice } = req.query;
-
-  const query = {};
-
-  if (category) {
-    query.category = category;
-  }
-
-  if (minPrice) {
-    query.price = { ...query.price, $gte: Number(minPrice) };
-  }
-
-  if (maxPrice) {
-    query.price = { ...query.price, $lte: Number(maxPrice) };
-  }
-
-  try {
-    const filteredCars = await Car.find(query);
-    res.json(filteredCars);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
-
-module.exports = router;
+module.exports = router; // Exporting the router for use in other parts of the application
