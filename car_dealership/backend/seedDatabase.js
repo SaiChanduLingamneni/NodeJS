@@ -146,34 +146,7 @@ const seedCars = async () => {
             ]
           }
         },
-        {
-          name: 'Mercedes-Benz A-Class',
-          model: 'A200',
-          price: 35000,
-          image: 'aclass_1.jpeg',
-          image_2: 'aclass_2.jpeg',
-          image_3: 'aclass_3.jpeg',
-          category: 'Sedan',
-          details: {
-            exterior: 'Polar White',
-            make: 'Mercedes',
-            year: '2018',
-            VIN: 'WVGBV3AXXDW626077',
-            fuelEfficiency: '9.5 CITY / 6.8 HWY L/100KM',
-            keyFeatures: [
-              'AWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Hands-Free Liftgate',
-              'Heated Seats', 'Interior Accents', 'Keyless Entry', 'Parking Sensors / Assist', 'Power Seats',
-              'Rain Sensing Wipers', 'Satellite Radio Ready', 'Sunroof / Moonroof', 'WiFi Hotspot'
-            ],
-            scheduleTestDrive: true,
-            checkAvailability: true,
-            premiumOptions: [
-              'All Wheel Drive', 'Back-Up Camera', 'Blind Spot Monitor', 'Bluetooth Connection', 'Rear Fog Lamps',
-              'Hands-Free Liftgate', 'Heated Front Seats', 'Keyless Entry',  'Power Driver Seat',
-              'Rain Sensing Wipers', 'Satellite Radio', 'Generic Sun/Moonroof', 'WiFi Hotspot'
-            ]
-          }
-        },
+        
       
         // SUVs
         {
@@ -468,33 +441,6 @@ const seedCars = async () => {
             year: '2018',
             VIN: 'WVGBV3AXXDW626077',
             fuelEfficiency: '16 CITY / 24 HWY MPG',
-            keyFeatures: [
-              'AWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Heated Seats',
-              'Interior Accents', 'Keyless Entry', 'Power Seats', 'Satellite Radio Ready', 'Sunroof / Moonroof'
-            ],
-            scheduleTestDrive: true,
-            checkAvailability: true,
-            premiumOptions: [
-              'All Wheel Drive', 'Back-Up Camera', 'Blind Spot Monitor', 'Bluetooth Connection', 'Heated Front Seats',
-              'Interior Trim - Piano Black', 'Keyless Entry', 'Active Parking Assist', 'Power Driver Seat',
-              'Rain Sensing Wipers', 'Satellite Radio', 'Sunroof / Moonroof'
-            ]
-          }
-        },
-        {
-          name: 'Mercedes-AMG S63 Coupe',
-          model: 'S63 Coupe',
-          price: 170000,
-          image: 's63_1.jpeg',
-          image_2: 's63_2.jpeg',
-          image_3: 's63_3.jpeg',
-          category: 'Sports',
-          details: {
-            exterior: 'Obsidian Black',
-            make: 'Mercedes',
-            year: '2018',
-            VIN: 'WVGBV3AXXDW626077',
-            fuelEfficiency: '15 CITY / 21 HWY MPG',
             keyFeatures: [
               'AWD', 'Backup Camera', 'Blind Spot Monitor', 'Bluetooth', 'Fog Lights', 'Heated Seats',
               'Interior Accents', 'Keyless Entry', 'Power Seats', 'Satellite Radio Ready', 'Sunroof / Moonroof'
